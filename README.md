@@ -1,17 +1,17 @@
 # Similar-DUC-Caffe-implement
-DUC/SYDN similar caffe implementation 
+DUC/STDN similar caffe implementation 
 
 Usage:
 
-layer{
-  name: "enlarge"
-  type: "Enlarge"
-  bottom: "conv7_2"
-  top: "conv6_2"
-  enlarge_param {
-    size: 10 //size after enlarge
-  } 
-}
+layer{<br>
+>name: "enlarge"<br>
+  type: "Enlarge"<br>
+  bottom: "conv7_2"<br>
+  top: "conv6_2"<br>
+  enlarge_param {<br>
+  size: 10 //size after enlarge<br>
+  }<br>
+}<br>
 
 Note:
 
