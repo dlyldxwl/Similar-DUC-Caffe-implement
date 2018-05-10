@@ -16,9 +16,9 @@ void EnlargeLayer<Dtype>::LayerSetup(const vector<Blob<Dtype>*>& bottom,const ve
 
     scale_ = int(img_size_ / h_ori_);
     group_ = int(ch_ori_ / (scale_*scale_)); //channels after enlarge
-	const int a = int(img_size_%h_ori_);
+    const int a = int(img_size_%h_ori_);
 
-	CHECK_EQ(a,0)<<"The size parameter must be a multiple of the bottom feature map height/width ";
+    CHECK_EQ(a,0)<<"The size parameter must be a multiple of the bottom feature map height/width ";
     CHECK_EQ(h_ori_,w_ori_)<<"the width and height of the feature map to be sampled are equal";
     CHECK_GT(img_size_,h_ori_)<<"size param need be greater than feature map size";
     
