@@ -3,13 +3,13 @@ DUC/STDN similar caffe implementation
 
 Usage:
 
-layer{<br>
+layer{ <br>
 >name: "enlarge"<br>
   type: "Enlarge"<br>
   bottom: "conv7_2"<br>
   top: "conv6_2"<br>
   enlarge_param {<br>
-     size: 10 //size after enlarge<br>
+  size: 10 //size after enlarge<br>
   }<br>
 }<br>
 
