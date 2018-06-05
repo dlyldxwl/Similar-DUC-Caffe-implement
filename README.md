@@ -4,14 +4,14 @@ DUC/STDN similar caffe implementation
 Usage:
 ```
 layer{ 
->name: "enlarge"<br>
-  type: "Enlarge"<br>
-  bottom: "conv7_2"<br>
-  top: "conv6_2"<br>
+  name: "enlarge"
+  type: "Enlarge"
+  bottom: "conv7_2" //size is 5*5
+  top: "conv6_2" //size is 10*10
   enlarge_param {
-  >size: 10  //size after enlarge <br>
-  }<br>
-}<br>
+    size: 10  //size after enlarge <br>
+  }
+}
 ```
 Note:
 
