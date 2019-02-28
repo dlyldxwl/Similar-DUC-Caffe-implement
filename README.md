@@ -9,7 +9,7 @@ layer{
   bottom: "conv7_2" //size is 5*5
   top: "conv6_2" //size is 10*10
   enlarge_param {
-    size: 10  //size after enlarge <br>
+    size: 10  //size after enlarge
   }
 }
 ```
